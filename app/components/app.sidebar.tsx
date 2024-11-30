@@ -1,20 +1,20 @@
 import {
-    Sidebar,
-    SidebarContent,
-    SidebarFooter,
-    SidebarGroup,
-    SidebarHeader,
-} from "~/components/ui/sidebar"
-  
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarHeader,
+} from "~/components/ui/sidebar";
+
 export function AppSidebar() {
-return (
+  return (
     <Sidebar>
-    <SidebarHeader />
-    <SidebarContent>
+      <SidebarHeader />
+      <SidebarContent>
         <SidebarGroup />
         <SidebarGroup />
-    </SidebarContent>
-    <SidebarFooter />
+      </SidebarContent>
+      <SidebarFooter />
     </Sidebar>
-)
+  );
 }

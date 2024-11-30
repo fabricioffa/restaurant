@@ -33,18 +33,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="antialiased bg-background">
-        
-      <SidebarProvider>
-      <AppSidebar />
-      <main>
-        <SidebarTrigger />
-        {children}
-      </main>
-    </SidebarProvider>  
+      <body className="bg-background antialiased">
+        <SidebarProvider>
+          <AppSidebar />
+          <main>
+            <SidebarTrigger />
+            {children}
+          </main>
+        </SidebarProvider>
         <ScrollRestoration />
         <Scripts />
-      </body> 
+      </body>
     </html>
   );
 }
